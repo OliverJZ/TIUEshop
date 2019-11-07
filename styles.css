@@ -15,7 +15,7 @@ body {
     background-attachment: fixed;
   }
 
-main { 
+.background { 
     width: 960px;
     margin:auto; 
     background-color: lightgrey; 
@@ -31,9 +31,11 @@ main {
 }
 
 nav{
+  position: sticky;
   overflow: hidden;
   background-color: black;
   font-family: Arial;
+  top: 0;
 }
 
 nav a {
@@ -107,3 +109,31 @@ nav a:hover, .dropdown:hover .dropbtn {
   width: 400px;
   margin: 0 auto;
 } --> */
+
+
+/***************
+******MAIN******
+***************/
+
+main{
+  height: auto;
+  margin: 0 auto;
+}
+main p{
+  font-size: 16px;
+  color: black;
+  text-align: left;
+  font-family: inherit;
+  text-align: center;
+}
+main h1{
+  font-size: 50px;
+  text-align: center;
+  padding: 12px 16px;
+  
+}
+main iframe{
+  display: block;
+  margin: 0 auto;
+  
+}
