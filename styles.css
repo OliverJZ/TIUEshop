@@ -142,15 +142,24 @@ main iframe{
 ******FOOTER****
 ***************/
 
-footer {
-  position: relative;
-  margin-top: 620px;
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 960px;
   height: 60px;
   background-color: black;
   font-size: 16px;
+  line-height: 60px;
+}
+
+footer p {
   color: white;
   text-align: center;
-  vertical-align: middle;
-  line-height: 60px;
+  vertical-align: bottom;
+}
+
+footer p a {
+  color: white;
+  text-align: center;
   text-decoration: none;
 }
