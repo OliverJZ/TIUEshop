@@ -119,10 +119,11 @@ main{
   height: auto;
   margin: 0 auto;
 }
-main p{
+
+/*main p{
   font-size: 16px;
   color: black;
-  text-align: left;
+  text-align: left;       (Treba na to spravit osobitnu classu lebo to rozhodi ostatne stranky)
   font-family: inherit;
   text-align: center;
 }
@@ -132,11 +133,95 @@ main h1{
   padding: 12px 16px;
   
 }
+*/
+
 main iframe{
   display: block;
   margin: 0 auto;
   
 }
+
+
+/*************
+****PRODUKT***
+**************/
+
+.produkt img{
+  width:50%; 
+  height:50%;
+  border:5px solid gray;
+  margin-left:25px;
+  margin-top:25px;
+  float:left;
+}
+
+.produkt p{
+  color: black;
+  font-family: inherit;
+}
+
+.produkt h1{
+  font-size: 50px;
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.produkt h2{
+  font-size: 25px;
+  margin-top: 20px;
+  margin-right: 25px;
+  float:right;
+}
+
+.produkt .info{
+  font-size: 20px;
+  margin-right: 25px;
+  float: right;
+}
+
+.velkosti {
+  position: relative;
+  display: inline-block;
+}
+
+.velkosti-obsah {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.velkosti:hover .velkosti-obsah {
+  display: block;
+}
+
+.velkosti span:hover {
+  background-color: gray;
+}
+
+.popis_produktu {
+  clear:both;
+}
+
+.popis_produktu h2 {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.popis_produktu p {
+  color: black;
+  font-family: inherit;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+
 
 /***************
 ******FOOTER****
