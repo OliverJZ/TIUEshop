@@ -1,0 +1,2 @@
+# TIUEshop
+pracicka pre Šéfka

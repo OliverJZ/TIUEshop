@@ -1,0 +1,266 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("bgsneaker.jpeg");
+    background-position: top center;
+    margin:auto;
+    /*background-repeat: no-repeat;*/
+    background-attachment: fixed;
+  }
+
+.background { 
+    width: 960px;
+    margin:auto; 
+    background-color: lightgrey; 
+    height: 1600px;
+    font-size: 0%;
+}
+
+
+.mainvid{
+    width: 100%;
+    height: 450px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+nav{
+  position: sticky;
+  overflow: hidden;
+  background-color: black;
+  font-family: Arial;
+  top: 0;
+}
+
+nav a {
+  float: right;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav i {
+  float: right;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown{
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn{
+  font-size: 25px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 0px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+nav a:hover, .dropdown:hover .dropbtn {
+  background-color: darkgrey;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index:1;
+  opacity: 70%;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+ /*.navigation ul 
+{
+  list-style: none;
+  padding: 0;
+  width: 400px;
+  margin: 0 auto;
+} --> */
+
+
+/***************
+******MAIN******
+***************/
+
+main{
+  height: auto;
+  margin: 0 auto;
+}
+
+main p{
+  font-size: 20px;
+  color: black;
+  text-align: left;       (Treba na to spravit osobitnu classu lebo to rozhodi ostatne stranky)
+  font-family: inherit;
+}
+main h1{
+  font-size: 50px;
+  text-align: center;
+  padding: 12px 16px;
+  
+}
+*/
+
+main iframe{
+  display: block;
+  margin: 0 auto;
+  
+}
+
+
+/*************
+****PRODUKT***
+**************/
+
+.produkt img{
+  width:50%; 
+  height:50%;
+  border:5px solid gray;
+  margin-left:25px;
+  margin-top:25px;
+  float:left;
+}
+
+.produkt p{
+  color: black;
+  font-family: inherit;
+}
+
+.produkt h1{
+  font-size: 50px;
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.produkt h2{
+  font-size: 25px;
+  margin-top: 20px;
+  margin-right: 25px;
+  float:right;
+}
+
+.produkt .info{
+  font-size: 20px;
+  margin-right: 25px;
+  float: right;
+}
+
+.velkosti {
+  position: relative;
+  display: inline-block;
+}
+
+.velkosti-obsah {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.velkosti:hover .velkosti-obsah {
+  display: block;
+}
+
+.velkosti span:hover {
+  background-color: gray;
+}
+
+.velkosti .velkosti-obsah ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.velkosti .velkosti-obsah ul li img {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background-color: #f9f9f9;
+  border: none;
+  margin-top: 3px;
+}
+
+.velkosti .velkosti-obsah ul li:hover, .velkosti-obsah ul li:hover img {
+  background-color: #D3D3D3;
+}
+
+
+.popis_produktu {
+  clear: both;
+}
+
+.popis_produktu h2 {
+  font-size: 25px;
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.popis_produktu p {
+  color: black;
+  font-family: inherit;
+  font-size: 20px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+
+
+/***************
+******FOOTER****
+***************/
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 960px;
+  height: auto;
+  background-color: black;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+footer p {
+  color: white;
+  text-align: center;
+}
+
+footer p a {
+  color: white;
+  text-decoration: none;
+}
