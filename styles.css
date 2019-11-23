@@ -102,7 +102,7 @@ nav a:hover, .dropdown:hover .dropbtn {
 .dropdown:hover .dropdown-content{
   display: block;
 }
-/* .navigation ul 
+ /*.navigation ul 
 {
   list-style: none;
   padding: 0;
@@ -115,25 +115,44 @@ nav a:hover, .dropdown:hover .dropbtn {
 ******MAIN******
 ***************/
 
-main{
+main {
   height: auto;
   margin: 0 auto;
 }
 
-/*main p{
-  font-size: 16px;
+main .popis {
+  font-size: 20px;
   color: black;
   text-align: left;       (Treba na to spravit osobitnu classu lebo to rozhodi ostatne stranky)
   font-family: inherit;
-  text-align: center;
 }
-main h1{
+
+main h1 {
   font-size: 50px;
   text-align: center;
   padding: 12px 16px;
-  
 }
-*/
+
+main h2 {
+  margin-top: 20px;
+  font-size: 25px;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+main h3 {
+  margin-top: 20px;
+  font-size: 20px;
+  padding: 12px 16px;
+  text-align: center;
+}
+
+main p {
+  margin-top: 30px;
+  font-size: 18px;
+  padding: 12px 16px;
+  text-align: left;
+}
 
 main iframe{
   display: block;
@@ -188,7 +207,7 @@ main iframe{
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
+  min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
@@ -202,8 +221,27 @@ main iframe{
   background-color: gray;
 }
 
+.velkosti .velkosti-obsah ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.velkosti .velkosti-obsah ul li img {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background-color: #f9f9f9;
+  border: none;
+  margin-top: 3px;
+}
+
+.velkosti .velkosti-obsah ul li:hover, .velkosti-obsah ul li:hover img {
+  background-color: #D3D3D3;
+}
+
+
 .popis_produktu {
-  clear:both;
+  clear: both;
 }
 
 .popis_produktu h2 {
