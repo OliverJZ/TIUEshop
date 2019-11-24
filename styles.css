@@ -91,13 +91,14 @@ main p{
   text-align: left;        /*(Treba na to spravit osobitnu classu lebo to rozhodi ostatne stranky)*/
   font-family: inherit;
 }
+
 main h1{
   font-size: 50px;
   text-align: center;
   padding: 12px 16px;
   
 }
-*/
+
 
 main iframe{
   display: block;
@@ -105,43 +106,140 @@ main iframe{
   
 }
 
+.firma p {
+  font-size: 20px;
+  color: black;
+  text-align: left;        
+  font-family: inherit;
+  padding: 12px 16px;
+}
+
+.firma h1 {
+  font-size: 50px;
+  text-align: center;
+  padding: 12px 16px;
+}
+
+.firma h2 {
+  font-size: 30px;
+  text-align: center;
+  padding: 12px 16px;
+}
+
 
 /*************
 ****PRODUKT***
 **************/
 
+.slider {
+  width: 400px;
+  text-align: center;
+  padding: 12px 16px;
+  float: left;
+  margin-top: 300px;
+  position: absolute;
+}
 
-.produkt img{
+.slides {
+  display: flex;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 400px;
+  text-align: center;
+  margin-left: 16px;
+  float: left;
+  margin-right: 150px;
+}
+
+.slides div {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 400px;
+  height: 300px;
+  margin-right: 50px;
+  border-radius: 10px;
+  background:white;
+  transform-origin: center center;
+  transform: scale(1);
+  position: relative;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.slider a {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: white;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+}
+
+.slider a:active {
+  top: 1px;
+}
+
+.slider a:focus {
+  background: white;
+}
+
+.slides img {
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.slider img {
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*.produkt img{
   width:50%; 
   height:50%;
-  /*border:5px solid gray;*/
+  /*border:5px solid gray;
   margin-left:25px;
   margin-top:25px;
   float:left;
+}*/
+
+.produkt-box {
+  width: 350px;
+  height: 400px;
+  float: left;
+  text-align: left;
 }
 
-.produkt p{
+.produkt p {
   color: black;
   font-family: inherit;
   margin-top: 25px;
 }
 
-
-
-.produkt h1{
+.produkt h1 {
   font-size: 35px;
   margin-top: 20px;
-  margin-right: 65px;
   margin-bottom: 40px;
-  float:right;
-  text-align: center;
-  
+  float: left;
+  font-family: 'Alata', sans-serif;
 }
 
-.produkt .info{
+.produkt .info {
   font-size: 20px;
-  margin-right: 25px;
-  float: right;
 }
 
 .produkt .info h2{
@@ -149,7 +247,8 @@ main iframe{
   float: left;
   font-size: 25px;
   font-family: 'Alata', sans-serif;
-  
+  padding-right: 250px;
+  margin-bottom: 10px;
 }
 
 .velkosti {
@@ -161,7 +260,7 @@ main iframe{
   display: none;
   position: absolute;
   /*background-color: rgba(249, 249, 249, 0.2);*/
-  background-color: cornsilk;
+  background-color: white;
   min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
