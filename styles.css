@@ -18,9 +18,10 @@ body {
 .background { 
     width: 960px;
     margin:auto; 
-    background-color: lightgrey; 
+    background-color: white; 
     height: 1600px;
     font-size: 0%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -30,85 +31,49 @@ body {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+/***************
+******NAV*******
+***************/
+
 nav{
-  position: sticky;
-  overflow: hidden;
   background-color: black;
-  font-family: Arial;
-  top: 0;
+  color: azure;
+  font-size: 18px;
+  text-align: left;
+  
 }
 
-nav a {
-  float: right;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+nav li{
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 12px;
+  cursor: pointer;
 }
 
-nav i {
-  float: right;
-  font-size: 20px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+nav li:hover{
+  background-color: lightgray;
 }
 
 .dropdown{
-  float: left;
-  overflow: hidden;
-}
-
-.dropdown .dropbtn{
-  font-size: 25px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 0px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-nav a:hover, .dropdown:hover .dropbtn {
-  background-color: darkgrey;
+  position: relative;
 }
 
 .dropdown-content{
-  display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index:1;
-  opacity: 70%;
+  top: 100%;
+  left: 0;
+  text-align: 100%;
+  display: none;
 }
 
-.dropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
+.dropdown-content li{
+  background-color: black;
+  width: 100%;
+} 
 
 .dropdown:hover .dropdown-content{
   display: block;
 }
-/* .navigation ul 
-{
-  list-style: none;
-  padding: 0;
-  width: 400px;
-  margin: 0 auto;
-} --> */
 
 
 /***************
@@ -120,12 +85,11 @@ main{
   margin: 0 auto;
 }
 
-/*main p{
-  font-size: 16px;
+main p{
+  font-size: 20px;
   color: black;
-  text-align: left;       (Treba na to spravit osobitnu classu lebo to rozhodi ostatne stranky)
+  text-align: left;        /*(Treba na to spravit osobitnu classu lebo to rozhodi ostatne stranky)*/
   font-family: inherit;
-  text-align: center;
 }
 main h1{
   font-size: 50px;
@@ -146,10 +110,11 @@ main iframe{
 ****PRODUKT***
 **************/
 
+
 .produkt img{
   width:50%; 
   height:50%;
-  border:5px solid gray;
+  /*border:5px solid gray;*/
   margin-left:25px;
   margin-top:25px;
   float:left;
@@ -158,25 +123,33 @@ main iframe{
 .produkt p{
   color: black;
   font-family: inherit;
+  margin-top: 25px;
 }
+
+
 
 .produkt h1{
-  font-size: 50px;
-  text-align: center;
-  padding: 12px 16px;
-}
-
-.produkt h2{
-  font-size: 25px;
+  font-size: 35px;
   margin-top: 20px;
-  margin-right: 25px;
+  margin-right: 65px;
+  margin-bottom: 40px;
   float:right;
+  text-align: center;
+  
 }
 
 .produkt .info{
   font-size: 20px;
   margin-right: 25px;
   float: right;
+}
+
+.produkt .info h2{
+  color: red;
+  float: left;
+  font-size: 25px;
+  font-family: 'Alata', sans-serif;
+  
 }
 
 .velkosti {
@@ -187,8 +160,9 @@ main iframe{
 .velkosti-obsah {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  /*background-color: rgba(249, 249, 249, 0.2);*/
+  background-color: cornsilk;
+  min-width: 180px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   padding: 12px 16px;
   z-index: 1;
@@ -202,8 +176,27 @@ main iframe{
   background-color: gray;
 }
 
+.velkosti .velkosti-obsah ul {
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.velkosti .velkosti-obsah ul li img {
+  width: 20px;
+  height: 20px;
+  float: right;
+  background-color: rgba(249, 249, 249, 0.2);
+  border: none;
+  margin-top: 3px;
+}
+
+.velkosti .velkosti-obsah ul li:hover, .velkosti-obsah ul li:hover img {
+  background-color: #D3D3D3;
+}
+
+
 .popis_produktu {
-  clear:both;
+  clear: both;
 }
 
 .popis_produktu h2 {
